@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('cloning') {
       steps {
-        git 'https://github.com/iankittomar/prometheus.git'
+        git 'https://github.com/iankittomar/JenkinsPipeline-Prometheus.git'
       }
     }
     stage('mvn-Build') {
