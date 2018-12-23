@@ -1,0 +1,8 @@
+groups:
+- name: Dispoplan Usecase
+  rules:
+
+  # Circuit breakers
+  - alert: circuit breakers
+    expr: hystrix_circuit_breaker_open > 0
+    for: 2m
